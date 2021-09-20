@@ -2,6 +2,16 @@
 #include <deque>
 using namespace std;
 
+/*
+풀이법
+0. deque를 활용해서 풀었다.
+1. 중단조건 => (1) 벽에 부딪힐 경우, (2) 자신에게 부딪힐 경우
+2. 중단 조건이 아니라면, 뱀의 머리를 따로 저장해두고 방향에 맞게 돌아간다.
+(1) 사과라면, head만 늘려서 deque에 추가한다.
+(2) 아니라면, head를 push_front 해주고, 꼬리를 pop_back한다.
+3. head_x, head_y 업데이트
+*/
+
 int n, k, l;
 int map[101][101] = { 0, };
 char cmd[10001];
