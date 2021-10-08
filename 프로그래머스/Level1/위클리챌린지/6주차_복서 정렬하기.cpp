@@ -62,15 +62,7 @@ vector<int> solution(vector<int> weights, vector<string> head2head) {
     sort(v.begin(), v.end(), comp);
     
     for(int i=0; i<v.size(); i++){
-        for(int j=0; j<v[i].size(); j++){
-            cout << v[i][j] << " ";
-        }
-        cout << '\n';
-    }
-    
-    for(int i=0; i<v.size(); i++){
         answer.push_back(v[i][0]+1);
     }
-    
     return answer;
 }
