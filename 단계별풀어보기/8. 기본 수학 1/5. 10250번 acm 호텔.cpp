@@ -2,23 +2,29 @@
 using namespace std;
 
 int main() {
-	
+
 	int t;
 	cin >> t;
-	
+
 	while (t--) {
 
 		int h, w, n;
 		cin >> h >> w >> n;
 
-		int a = (n-1) / h + 1;
-		int b = n % h;
-
-		if (b == 0) {
-			b = h;
+		int floor = n % h;
+		if (floor == 0) {
+			floor = h;
 		}
 
-		cout << b * 100 + a << '\n';
+		int col = 0;
+		if (n % h == 0) {
+			col = n / h;
+		}
+		else {
+			col = (n / h) + 1;
+		}
+
+		cout << floor * 100 + col << '\n';
 
 	}
 	
