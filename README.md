@@ -65,15 +65,24 @@ s2.push(make_pair(1,1));
 queue<int> q1;            // 선언1
 queue<pair<int,int>> q2;  // 선언2
 
-q1.push(1);
-a1
-
+q1.push(1);   // back에 데이터 삽입
+q1.pop();     // back 데이터 제거
+q1.front();   // 맨 앞 원소 반환
+q1.back();    // 맨 뒤 원소 반환
+q1.size();    // queue 사이즈 반환
+q1.empty();   // queue가 비어있는지 확인
 
 ```
 
 ### Priority Queue
+- heap으로 구현된 자료구조
+- #include <queue>
+- pair와 함께 사용되는 경우가 많으며, 비교는 첫번째요소가 같으면 두번째 요소로 비교한다.
 
-
+```
+  
+```
+  
 
 ### Set
 
