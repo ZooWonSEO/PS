@@ -14,6 +14,7 @@ p = make_pair("abc", 1>);  // 값 삽입
 
 ### vector
 - 크기가 가변적인 배열인 자료구조
+- #include <vector>
 
 ```
 vector<int> v;    // 선언
@@ -28,16 +29,26 @@ sort(v.begin(), v.end());  // 벡터 오름차순 정렬
 
 vector<pairt<int, int>> v; // pair를 vector로 선언
 v[0].first;
-v[0[.second;
+v[0].second;
 
 ```
 
 <hr>
 
 ### Stack
+- LIFO(Last In First Out)인 자료구조
+- #include <stack>
 
+```
+stack<int>            s1;   // 선언1
+stack<pair<int, int>> s2;   // 선언2
 
+  
+  
+```
 
+<hr>
+  
 ### Queue
 
 
