@@ -14,9 +14,10 @@ p = make_pair("abc", 1>);  // 값 삽입
 
 ### vector
 - 크기가 가변적인 배열인 자료구조
-- #include <vector>
 
 ```
+#include <vector>
+
 vector<int> v;    // 선언
 v.push_back(1);   // 마지막에 데이터 추가
 v.pop_back();     // 마지막 데이터 제거
@@ -38,9 +39,10 @@ v[0].second;
 
 ### Stack
 - LIFO(Last In First Out)인 자료구조
-- #include <stack>
 
 ```
+#include <stack>
+
 stack<int>            s1;   // 선언1
 stack<pair<int, int>> s2;   // 선언2
 
@@ -58,10 +60,11 @@ s2.push(make_pair(1,1));
   
 ### Queue
 - FIFO(Fast In First Out)인 자료구조
-- #include <queue>
 - BFS를 구현할 때 유용하다.
 
 ```
+#include <queue>
+
 queue<int> q1;            // 선언1
 queue<pair<int,int>> q2;  // 선언2
 
@@ -76,10 +79,10 @@ q1.empty();   // queue가 비어있는지 확인
 
 ### Priority Queue
 - heap으로 구현된 자료구조
-- #include <queue>
 - pair와 함께 사용되는 경우가 많으며, 비교는 첫번째요소가 같으면 두번째 요소로 비교한다.
 
 ```
+#include <queue>
   
 ```
   
