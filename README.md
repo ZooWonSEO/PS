@@ -77,6 +77,22 @@ q1.empty();   // queue가 비어있는지 확인
 
 ```
 
+<hr>
+
+### Deque
+- Queue이지만 앞,뒤로 데이터를 삽입가능한 자료구조
+
+```
+#include <deque>
+
+deque<int> d1;
+
+
+
+```
+
+<hr>
+
 ### Priority Queue
 - heap으로 구현된 자료구조
 - pair와 함께 사용되는 경우가 많으며, 비교는 첫번째요소가 같으면 두번째 요소로 비교한다.
