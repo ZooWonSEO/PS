@@ -80,14 +80,20 @@ q1.empty();   // queue가 비어있는지 확인
 <hr>
 
 ### Deque
-- Queue이지만 앞,뒤로 데이터를 삽입가능한 자료구조
+- Queue이지만 앞,뒤로 데이터를 삽입,삭제가 가능한 자료구조
 
 ```
 #include <deque>
 
-deque<int> d1;
+deque<int> d1;            // 선언1
+deque<pair<int,int>> d2;  // 선언2
 
-
+d1.push_front(1);   // deque 맨 앞에 원소 삽입
+d1.push_back(1);    // deque 맨 뒤에 원소 삽입
+d1.pop_front();     // deque 맨 앞 원소 삭제
+d1.pop_back();      // deque 맨 뒤 원소 삭제
+d1.size();          // deque 사이즈 반환
+d1.empty();         // deque가 비어있는지 확인
 
 ```
 
@@ -99,6 +105,9 @@ deque<int> d1;
 
 ```
 #include <queue>
+
+priority_queue
+
   
 ```
   
