@@ -130,9 +130,32 @@ pq.empty();   // pq가 비어있는지 확인
 ```
 #include <unordered_map>
 
+unordered_map<string, int> um;   // unordered_map 선언
+
+// unorderd_map 원소 삽입
+um.insert(make_pair("key", 1)); 
+um["banana"] = 2;
+um.insert({"melon", 3});
+
+um.erase("melon");  // unorderd_map 원소 삭제 (key기준)
+um.find("banana");  // key에 해당하는 iterator를 반환한다. key가 없으면 um.end() 반환
+um.count("banana"); // key에 해당하는 value의 개수를 반환한다. key가 없으면 0, 있으면 1 반환
+
+um.size();          // unorderd_map 사이즈 반환
+um.clear();         // unorderd_map 초기화
+um.empty();         // unorderd_map이 비어있는지 확인
+
+//순회
+for(auto iter = um.begin(); iter != um.end(); iter++){
+  tmp = *iter;
+}
+
+// 검색
+if(um.find("key") != um.end()){
+  break;
+}
 
 ```
-
 
 <hr>
 
