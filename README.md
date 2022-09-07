@@ -19,8 +19,8 @@ p = make_pair("abc", 1>);  // 값 삽입
 #include <vector>
 
 vector<int> v;    // 선언
-v.push_back(1);   // 마지막에 데이터 추가
-v.pop_back();     // 마지막 데이터 제거
+v.push_back(1);   // 마지막에 원소 삽입
+v.pop_back();     // 마지막 원소 제거
 v.size();         // 원소개수 반환
 v.clear();        // 벡터 초기화
 v.front();        // 첫번째 원소 반환
@@ -46,10 +46,10 @@ v[0].second;
 stack<int>            s1;   // 선언1
 stack<pair<int, int>> s2;   // 선언2
 
-s1.push(1);   // top에 데이터 삽입
-s1.pop();     // top 데이터 제거
-s1.top();     // top 데이터 반환
-s1.size();    // stack 크기 반환
+s1.push(1);   // top에 원소 삽입
+s1.pop();     // top 원소 제거
+s1.top();     // top 원소 반환
+s1.size();    // stack 사이즈 반환
 s1.empty();   // stack이 비어있는지 확인
 
 s2.push(make_pair(1,1));
@@ -68,8 +68,8 @@ s2.push(make_pair(1,1));
 queue<int> q1;            // 선언1
 queue<pair<int,int>> q2;  // 선언2
 
-q1.push(1);   // back에 데이터 삽입
-q1.pop();     // back 데이터 제거
+q1.push(1);   // back에 원소 삽입
+q1.pop();     // back  제거
 q1.front();   // 맨 앞 원소 반환
 q1.back();    // 맨 뒤 원소 반환
 q1.size();    // queue 사이즈 반환
@@ -102,12 +102,22 @@ d1.empty();         // deque가 비어있는지 확인
 ### Priority Queue
 - heap으로 구현된 자료구조
 - pair와 함께 사용되는 경우가 많으며, 비교는 첫번째요소가 같으면 두번째 요소로 비교한다.
+- 기본형은 max-heap이다. min-heap으로 선인하기 위해서는 greater를 사용해야한다.
 
 ```
 #include <queue>
 
-priority_queue
+priority_queue<int> pq;                                   // 선언1
+priority_queue<pair<int,int>> pq2;                        // 선언2
+priority_queue<int, vector<int>, less<int>> min_heap;     // 선언3
+priority_queue<int, vector<int>, greater<int>> max_heap;  // 선언4
 
+
+pq.push(1);   // pq top에 원소 삽입
+pq.pop();     // pq top 원소 삭제
+pq.top();     // pq top 원소 반환
+pq.size();    // pq 사이즈 반환
+pq.empty();   // pq가 비어있는지 확인
   
 ```
   
