@@ -124,8 +124,12 @@ pq.empty();   // pq가 비어있는지 확인
 <hr>
 
 ### Unordered Map
+- hash table 기반의 hash container이다.
+- 중복된 데이터를 허용하지 않는다.
 
 ```
+#include <unordered_map>
+
 
 ```
 
